@@ -1,0 +1,299 @@
+{
+  "project_info": {
+    "project_number": "577388032723",
+    "firebase_url": "https://kasiiot-default-rtdb.firebaseio.com",
+    "project_id": "kasiiot",
+    "storage_bucket": "kasiiot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:cee6c8cb9ae66261da5a26",
+        "android_client_info": {
+          "package_name": "com.example.beta_flex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:b9caeac4180d8e7bda5a26",
+        "android_client_info": {
+          "package_name": "com.example.deneme_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:4ae7de1aaced5b22da5a26",
+        "android_client_info": {
+          "package_name": "com.example.first_dart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:35c83decca8cccf6da5a26",
+        "android_client_info": {
+          "package_name": "com.example.flex_listkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:b8f568665fdde332da5a26",
+        "android_client_info": {
+          "package_name": "com.example.flutter_deneme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:cf7219710911c138da5a26",
+        "android_client_info": {
+          "package_name": "com.example.kas_flex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:55acfed8eeb898b1da5a26",
+        "android_client_info": {
+          "package_name": "com.example.mobil_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577388032723:android:659cd8aa7e7ee69cda5a26",
+        "android_client_info": {
+          "package_name": "com.example.plaka_yerli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577388032723-sk987kpp9j56sej8adgg3tj4svf2qjva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCriO5gDo_QIwoq86rOwn01OZW_sXZnL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577388032723-hnmt993tuo6rfbr88f62nfa7ptaoavj9.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "577388032723-2vnmb73f937okio651r2hpqu1td55imq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.plakaYerli"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

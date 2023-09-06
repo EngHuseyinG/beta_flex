@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>577388032723-mn6m86btv6ho20e2kr1j0sn3uieuq4j1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.577388032723-mn6m86btv6ho20e2kr1j0sn3uieuq4j1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBQ6a5HeT2Ap-19MYoJ_5DVdxGjFEFrWEg</string>
+	<key>GCM_SENDER_ID</key>
+	<string>577388032723</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.betaFlex</string>
+	<key>PROJECT_ID</key>
+	<string>kasiiot</string>
+	<key>STORAGE_BUCKET</key>
+	<string>kasiiot.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:577388032723:ios:903b269252b730c9da5a26</string>
+	<key>DATABASE_URL</key>
+	<string>https://kasiiot-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
