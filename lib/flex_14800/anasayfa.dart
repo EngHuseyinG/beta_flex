@@ -356,7 +356,9 @@ class _anasayfaState extends State<anasayfa> {
         builder: (context) =>
             StatefulBuilder(
                 builder: (BuildContext context, StateSetter setState) {
-              return SizedBox(
+              return SingleChildScrollView(
+                child: Padding(padding: MediaQuery.of(context).viewInsets,
+                child: SizedBox(
                   height: MediaQuery.of(context).size.height * 0.85,
                   width: MediaQuery.of(context).size.width * 0.75,
                   child: Card(
@@ -571,7 +573,8 @@ class _anasayfaState extends State<anasayfa> {
                       ],
                     ),
                   ),
-                );
+                ),),
+              );
             }));
   }
 

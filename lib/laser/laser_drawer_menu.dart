@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:beta_flex/flex_14800/gunluk_testler.dart';
 import 'package:beta_flex/laser/laser_gecmis.dart';
 import 'package:beta_flex/laser/laser_main_page.dart';
+import 'package:beta_flex/laser/laser_projehakkinda.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -67,7 +68,7 @@ class _laser_drawer_menuState extends State<laser_drawer_menu> {
                       children: [
                         TextButton.icon(
                           onPressed: () {
-                            Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (context) => const laser_main_page()));
+                            Navigator.of(context).pushReplacement(CupertinoPageRoute(builder: (context) => const laser_projehakkinda()));
                           }, icon: Icon(Icons.info_outline,size: 30,color: Colors.blue.shade900,),
                           label:  const AutoSizeText('Proje Hakkında',style: TextStyle(fontSize: 15, color: Colors.black),),
                         ),

@@ -234,8 +234,6 @@ late bool _circularprogress = false;
 
   Future<void> _createExcel() async {
 
-
-
     // Create a new Excel document.
     final Workbook workbook = new Workbook();
 //Accessing worksheet via index.
@@ -334,7 +332,7 @@ late bool _circularprogress = false;
     workbook.dispose();
 
     final String path = (await getApplicationSupportDirectory()).path;
-    final String fileName = '$path/Output.xlsx';
+    final String fileName = '$path/14800_Rapor.xlsx';
     final File file = File(fileName);
     await file.writeAsBytes(bytes, flush: true);
     OpenFile.open(fileName);
@@ -514,361 +512,359 @@ late bool _circularprogress = false;
                         showDialog(context: context, builder: (context) =>
                         AlertDialog(
                           title: Text('Test Ayrıntıları',style: TextStyle(fontSize: 20, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
-                          content: Container(
-                            height: height * 0.75,
-                            width: width * 0.2,
-                            child: Column(
-                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text('Reçete Ayarları',style: TextStyle(fontSize: 15,color: Colors.blue.shade700, fontWeight: FontWeight.bold),maxLines: 1,),
-                                Divider(thickness: 1, color: Colors.red,),
-                                Text(list1[index]['D145'] == 1 ? 'Reçete Tipi: Çubuklu' : list1[index]['D145'] == 2 ? 'Reçete Tipi: Çubuksuz' : 'Reçete Tipi: ?',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Reçete Kodu:\t${(list1[index]['D122'] * 65536) + (list1[index]['D121'])}',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Ürün Boyu:\t${list1[index]['D142']}\tmm',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Ön Dolum Süresi:\t${list1[index]['D123'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Dolum Süresi:\t${list1[index]['D124'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Stabilizasyon Süresi:\t${list1[index]['D125'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Test Süresi:\t${list1[index]['D144'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Ön Basınç:\t${list1[index]['D126']}\tmbar',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Test Basıncı:\t${list1[index]['D127']}\tmbar',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                Text('Max Dta:\t${list1[index]['D128'].toDouble()/100.00}\tmbar',style: TextStyle(fontSize: 15,color: Colors.black),maxLines: 1,),
-                                SizedBox(height: 10,),
-                                Text('Sonuçlar',style: TextStyle(fontSize: 15,color: Colors.blue.shade700 , fontWeight: FontWeight.bold),maxLines: 1,),
-                                Divider(thickness: 1, color: Colors.red,),
-                                Text('Kanal 1 ve 2', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      list1[index]['D130'] == 0 || list1[index]['D130'] == 1
-                                          ? 'OK'
-                                          : list1[index]['D130'] == 2 ||
-                                          list1[index]['D130'] == 3 ||
-                                          list1[index]['D130'] == 4
-                                          ? 'NOK'
-                                          : list1[index]['D130'] ==
-                                          5 || list1[index]['D130'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D130'] == 10
-                                          ? '-'
-                                          : '?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:  list1[index]['D130'] == 0 ||
-                                        list1[index]['D130'] == 1
-                                        ? Colors.green
-                                        :  list1[index]['D130'] == 2 ||
+                          content: Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Reçete Ayarları',style: TextStyle(fontSize: 12,color: Colors.blue.shade700, fontWeight: FontWeight.bold),maxLines: 1,),
+                              Divider(thickness: 1, color: Colors.red,),
+                              Text(list1[index]['D145'] == 1 ? 'Reçete Tipi: Çubuklu' : list1[index]['D145'] == 2 ? 'Reçete Tipi: Çubuksuz' : 'Reçete Tipi: ?',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Reçete Kodu:\t${(list1[index]['D122'] * 65536) + (list1[index]['D121'])}',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Ürün Boyu:\t${list1[index]['D142']}\tmm',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Ön Dolum Süresi:\t${list1[index]['D123'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Dolum Süresi:\t${list1[index]['D124'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Stabilizasyon Süresi:\t${list1[index]['D125'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Test Süresi:\t${list1[index]['D144'].toDouble()/10.00}\tsn',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Ön Basınç:\t${list1[index]['D126']}\tmbar',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Test Basıncı:\t${list1[index]['D127']}\tmbar',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              Text('Max Dta:\t${list1[index]['D128'].toDouble()/100.00}\tmbar',style: TextStyle(fontSize: 12,color: Colors.black),maxLines: 1,),
+                              SizedBox(height: 5,),
+                              Text('Sonuçlar',style: TextStyle(fontSize: 12,color: Colors.blue.shade700 , fontWeight: FontWeight.bold),maxLines: 1,),
+                              Divider(thickness: 1, color: Colors.red,),
+                              Text('Kanal 1 ve 2', style: TextStyle(fontSize: 12, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    list1[index]['D130'] == 0 || list1[index]['D130'] == 1
+                                        ? 'OK'
+                                        : list1[index]['D130'] == 2 ||
                                         list1[index]['D130'] == 3 ||
                                         list1[index]['D130'] == 4
-                                        ? Colors.red
-                                        :  list1[index]['D130'] == 5 ||
-                                        list1[index]['D130'] == 6
-                                        ? Colors.yellow
-                                        .shade700
-                                        :  list1[index]['D130'] == 10
-                                        ? Colors.blueAccent
-                                        : Colors
-                                        .blueAccent),maxLines: 1,),
-                                    Text('/',style: TextStyle(fontSize: 20, color: Colors.black),maxLines: 1,),
-                                    Text(
-                                      list1[index]['D130'] == 0 || list1[index]['D130'] == 2
-                                          ? 'OK'
-                                          : list1[index]['D130'] == 1 ||
-                                          list1[index]['D130'] == 3 ||
-                                          list1[index]['D130'] == 5
-                                          ? 'NOK'
-                                          : list1[index]['D130'] ==
-                                          4 || list1[index]['D130'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D130'] == 10
-                                          ? '-'
-                                          : '?',
-                                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
-                                          color: list1[index]['D130'] == 0 ||
-                                              list1[index]['D130'] == 2
-                                              ? Colors.green
-                                              : list1[index]['D130'] == 1 ||
-                                              list1[index]['D130'] == 3 ||
-                                              list1[index]['D130'] == 5
-                                              ? Colors.red
-                                              : list1[index]['D130'] == 4 ||
-                                              list1[index]['D130'] == 6
-                                              ? Colors.yellow
-                                              .shade700
-                                              : list1[index]['D130'] == 10
-                                              ? Colors.blueAccent
-                                              : Colors
-                                              .blueAccent),
-                                    ),
-                                    SizedBox(width: 5,),
-                                    list1[index]['D130'] != 10 ? FittedBox(
-                                      child:
-                                      Text('${list1[index]['D131']
-                                          .toDouble() /
-                                          100.00}\tmbar',
-                                        style: TextStyle(fontSize: 15),),
-                                    ) : Text('-', style: TextStyle(
-                                        fontSize: 15,
-                                        color: Colors.black),
-                                      maxLines: 1,),
-                                  ],
-                                ),
-                                Text('Kanal 3 ve 4', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      list1[index]['D133'] == 0 || list1[index]['D133'] == 1
-                                          ? 'OK'
-                                          : list1[index]['D133'] == 2 ||
-                                          list1[index]['D133'] == 3 ||
-                                          list1[index]['D133'] == 4
-                                          ? 'NOK'
-                                          : list1[index]['D133'] ==
-                                          5 || list1[index]['D133'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D133'] == 10
-                                          ? '-'
-                                          : '?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:  list1[index]['D133'] == 0 ||
-                                        list1[index]['D133'] == 1
-                                        ? Colors.green
-                                        :  list1[index]['D133'] == 2 ||
+                                        ? 'NOK'
+                                        : list1[index]['D130'] ==
+                                        5 || list1[index]['D130'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D130'] == 10
+                                        ? '-'
+                                        : '?',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color:  list1[index]['D130'] == 0 ||
+                                      list1[index]['D130'] == 1
+                                      ? Colors.green
+                                      :  list1[index]['D130'] == 2 ||
+                                      list1[index]['D130'] == 3 ||
+                                      list1[index]['D130'] == 4
+                                      ? Colors.red
+                                      :  list1[index]['D130'] == 5 ||
+                                      list1[index]['D130'] == 6
+                                      ? Colors.yellow
+                                      .shade700
+                                      :  list1[index]['D130'] == 10
+                                      ? Colors.blueAccent
+                                      : Colors
+                                      .blueAccent),maxLines: 1,),
+                                  Text('/',style: TextStyle(fontSize: 15, color: Colors.black),maxLines: 1,),
+                                  Text(
+                                    list1[index]['D130'] == 0 || list1[index]['D130'] == 2
+                                        ? 'OK'
+                                        : list1[index]['D130'] == 1 ||
+                                        list1[index]['D130'] == 3 ||
+                                        list1[index]['D130'] == 5
+                                        ? 'NOK'
+                                        : list1[index]['D130'] ==
+                                        4 || list1[index]['D130'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D130'] == 10
+                                        ? '-'
+                                        : '?',
+                                    style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
+                                        color: list1[index]['D130'] == 0 ||
+                                            list1[index]['D130'] == 2
+                                            ? Colors.green
+                                            : list1[index]['D130'] == 1 ||
+                                            list1[index]['D130'] == 3 ||
+                                            list1[index]['D130'] == 5
+                                            ? Colors.red
+                                            : list1[index]['D130'] == 4 ||
+                                            list1[index]['D130'] == 6
+                                            ? Colors.yellow
+                                            .shade700
+                                            : list1[index]['D130'] == 10
+                                            ? Colors.blueAccent
+                                            : Colors
+                                            .blueAccent),
+                                  ),
+                                  SizedBox(width: 5,),
+                                  list1[index]['D130'] != 10 ? FittedBox(
+                                    child:
+                                    Text('${list1[index]['D131']
+                                        .toDouble() /
+                                        100.00}\tmbar',
+                                      style: TextStyle(fontSize: 12),),
+                                  ) : Text('-', style: TextStyle(
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                    maxLines: 1,),
+                                ],
+                              ),
+                              Text('Kanal 3 ve 4', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    list1[index]['D133'] == 0 || list1[index]['D133'] == 1
+                                        ? 'OK'
+                                        : list1[index]['D133'] == 2 ||
                                         list1[index]['D133'] == 3 ||
                                         list1[index]['D133'] == 4
-                                        ? Colors.red
-                                        :  list1[index]['D133'] == 5 ||
-                                        list1[index]['D133'] == 6
-                                        ? Colors.yellow
-                                        .shade700
-                                        :  list1[index]['D133'] == 10
-                                        ? Colors.blueAccent
-                                        : Colors
-                                        .blueAccent),maxLines: 1,),
-                                    Text('/',style: TextStyle(fontSize: 20, color: Colors.black),maxLines: 1,),
-                                    Text(
-                                      list1[index]['D133'] == 0 || list1[index]['D133'] == 2
-                                          ? 'OK'
-                                          : list1[index]['D133'] == 1 ||
-                                          list1[index]['D133'] == 3 ||
-                                          list1[index]['D133'] == 5
-                                          ? 'NOK'
-                                          : list1[index]['D133'] ==
-                                          4 || list1[index]['D133'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D133'] == 10
-                                          ? '-'
-                                          : '?',
-                                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
-                                          color: list1[index]['D133'] == 0 ||
-                                              list1[index]['D133'] == 2
-                                              ? Colors.green
-                                              : list1[index]['D133'] == 1 ||
-                                              list1[index]['D133'] == 3 ||
-                                              list1[index]['D133'] == 5
-                                              ? Colors.red
-                                              : list1[index]['D133'] == 4 ||
-                                              list1[index]['D133'] == 6
-                                              ? Colors.yellow
-                                              .shade700
-                                              : list1[index]['D133'] == 10
-                                              ? Colors.blueAccent
-                                              : Colors
-                                              .blueAccent),
-                                    ),
-                                    SizedBox(width: 10,),
-                                    list1[index]['D133'] != 10 ? FittedBox(
-                                      child:
-                                      Text('${list1[index]['D134']
-                                          .toDouble() /
-                                          100.00}\tmbar',
-                                        style: TextStyle(fontSize: 15),),
-                                    ) : Text('-', style: TextStyle(
-                                        fontSize: 15,
-                                        color: Colors.black),
-                                      maxLines: 1,),
-                                  ],
-                                ),
-                                SizedBox(width: 5,),
-                                Text('Kanal 5 ve 6', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      list1[index]['D136'] == 0 || list1[index]['D136'] == 1
-                                          ? 'OK'
-                                          : list1[index]['D136'] == 2 ||
-                                          list1[index]['D136'] == 3 ||
-                                          list1[index]['D136'] == 4
-                                          ? 'NOK'
-                                          : list1[index]['D136'] ==
-                                          5 || list1[index]['D136'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D136'] == 10
-                                          ? '-'
-                                          : '?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:  list1[index]['D136'] == 0 ||
-                                        list1[index]['D136'] == 1
-                                        ? Colors.green
-                                        :  list1[index]['D136'] == 2 ||
+                                        ? 'NOK'
+                                        : list1[index]['D133'] ==
+                                        5 || list1[index]['D133'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D133'] == 10
+                                        ? '-'
+                                        : '?',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color:  list1[index]['D133'] == 0 ||
+                                      list1[index]['D133'] == 1
+                                      ? Colors.green
+                                      :  list1[index]['D133'] == 2 ||
+                                      list1[index]['D133'] == 3 ||
+                                      list1[index]['D133'] == 4
+                                      ? Colors.red
+                                      :  list1[index]['D133'] == 5 ||
+                                      list1[index]['D133'] == 6
+                                      ? Colors.yellow
+                                      .shade700
+                                      :  list1[index]['D133'] == 10
+                                      ? Colors.blueAccent
+                                      : Colors
+                                      .blueAccent),maxLines: 1,),
+                                  Text('/',style: TextStyle(fontSize: 15, color: Colors.black),maxLines: 1,),
+                                  Text(
+                                    list1[index]['D133'] == 0 || list1[index]['D133'] == 2
+                                        ? 'OK'
+                                        : list1[index]['D133'] == 1 ||
+                                        list1[index]['D133'] == 3 ||
+                                        list1[index]['D133'] == 5
+                                        ? 'NOK'
+                                        : list1[index]['D133'] ==
+                                        4 || list1[index]['D133'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D133'] == 10
+                                        ? '-'
+                                        : '?',
+                                    style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
+                                        color: list1[index]['D133'] == 0 ||
+                                            list1[index]['D133'] == 2
+                                            ? Colors.green
+                                            : list1[index]['D133'] == 1 ||
+                                            list1[index]['D133'] == 3 ||
+                                            list1[index]['D133'] == 5
+                                            ? Colors.red
+                                            : list1[index]['D133'] == 4 ||
+                                            list1[index]['D133'] == 6
+                                            ? Colors.yellow
+                                            .shade700
+                                            : list1[index]['D133'] == 10
+                                            ? Colors.blueAccent
+                                            : Colors
+                                            .blueAccent),
+                                  ),
+                                  SizedBox(width: 10,),
+                                  list1[index]['D133'] != 12 ? FittedBox(
+                                    child:
+                                    Text('${list1[index]['D134']
+                                        .toDouble() /
+                                        100.00}\tmbar',
+                                      style: TextStyle(fontSize: 12),),
+                                  ) : Text('-', style: TextStyle(
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                    maxLines: 1,),
+                                ],
+                              ),
+                              SizedBox(width: 5,),
+                              Text('Kanal 5 ve 6', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    list1[index]['D136'] == 0 || list1[index]['D136'] == 1
+                                        ? 'OK'
+                                        : list1[index]['D136'] == 2 ||
                                         list1[index]['D136'] == 3 ||
                                         list1[index]['D136'] == 4
-                                        ? Colors.red
-                                        :  list1[index]['D136'] == 5 ||
-                                        list1[index]['D136'] == 6
-                                        ? Colors.yellow
-                                        .shade700
-                                        :  list1[index]['D136'] == 10
-                                        ? Colors.blueAccent
-                                        : Colors
-                                        .blueAccent),maxLines: 1,),
-                                    Text('/',style: TextStyle(fontSize: 20, color: Colors.black),maxLines: 1,),
-                                    Text(
-                                      list1[index]['D136'] == 0 || list1[index]['D136'] == 2
-                                          ? 'OK'
-                                          : list1[index]['D136'] == 1 ||
-                                          list1[index]['D136'] == 3 ||
-                                          list1[index]['D136'] == 5
-                                          ? 'NOK'
-                                          : list1[index]['D136'] ==
-                                          4 || list1[index]['D136'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D136'] == 10
-                                          ? '-'
-                                          : '?',
-                                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
-                                          color: list1[index]['D136'] == 0 ||
-                                              list1[index]['D136'] == 2
-                                              ? Colors.green
-                                              : list1[index]['D136'] == 1 ||
-                                              list1[index]['D136'] == 3 ||
-                                              list1[index]['D136'] == 5
-                                              ? Colors.red
-                                              : list1[index]['D136'] == 4 ||
-                                              list1[index]['D136'] == 6
-                                              ? Colors.yellow
-                                              .shade700
-                                              : list1[index]['D136'] == 10
-                                              ? Colors.blueAccent
-                                              : Colors
-                                              .blueAccent),
-                                    ),
-                                    SizedBox(width: 5,),
-                                    list1[index]['D136'] != 10 ? FittedBox(
-                                      child:
-                                      Text('${list1[index]['D137']
-                                          .toDouble() /
-                                          100.00}\tmbar',
-                                        style: TextStyle(fontSize: 15),),
-                                    ) : Text('-', style: TextStyle(
-                                        fontSize: 15,
-                                        color: Colors.black),
-                                      maxLines: 1,),
-                                  ],
-                                ),
-                                Text('Kanal 7 ve 8', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      list1[index]['D139'] == 0 || list1[index]['D139'] == 1
-                                          ? 'OK'
-                                          : list1[index]['D139'] == 2 ||
-                                          list1[index]['D139'] == 3 ||
-                                          list1[index]['D139'] == 4
-                                          ? 'NOK'
-                                          : list1[index]['D139'] ==
-                                          5 || list1[index]['D139'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D139'] == 10
-                                          ? '-'
-                                          : '?',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:  list1[index]['D139'] == 0 ||
-                                        list1[index]['D139'] == 1
-                                        ? Colors.green
-                                        :  list1[index]['D139'] == 2 ||
+                                        ? 'NOK'
+                                        : list1[index]['D136'] ==
+                                        5 || list1[index]['D136'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D136'] == 10
+                                        ? '-'
+                                        : '?',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color:  list1[index]['D136'] == 0 ||
+                                      list1[index]['D136'] == 1
+                                      ? Colors.green
+                                      :  list1[index]['D136'] == 2 ||
+                                      list1[index]['D136'] == 3 ||
+                                      list1[index]['D136'] == 4
+                                      ? Colors.red
+                                      :  list1[index]['D136'] == 5 ||
+                                      list1[index]['D136'] == 6
+                                      ? Colors.yellow
+                                      .shade700
+                                      :  list1[index]['D136'] == 10
+                                      ? Colors.blueAccent
+                                      : Colors
+                                      .blueAccent),maxLines: 1,),
+                                  Text('/',style: TextStyle(fontSize: 15, color: Colors.black),maxLines: 1,),
+                                  Text(
+                                    list1[index]['D136'] == 0 || list1[index]['D136'] == 2
+                                        ? 'OK'
+                                        : list1[index]['D136'] == 1 ||
+                                        list1[index]['D136'] == 3 ||
+                                        list1[index]['D136'] == 5
+                                        ? 'NOK'
+                                        : list1[index]['D136'] ==
+                                        4 || list1[index]['D136'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D136'] == 10
+                                        ? '-'
+                                        : '?',
+                                    style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
+                                        color: list1[index]['D136'] == 0 ||
+                                            list1[index]['D136'] == 2
+                                            ? Colors.green
+                                            : list1[index]['D136'] == 1 ||
+                                            list1[index]['D136'] == 3 ||
+                                            list1[index]['D136'] == 5
+                                            ? Colors.red
+                                            : list1[index]['D136'] == 4 ||
+                                            list1[index]['D136'] == 6
+                                            ? Colors.yellow
+                                            .shade700
+                                            : list1[index]['D136'] == 10
+                                            ? Colors.blueAccent
+                                            : Colors
+                                            .blueAccent),
+                                  ),
+                                  SizedBox(width: 5,),
+                                  list1[index]['D136'] != 10 ? FittedBox(
+                                    child:
+                                    Text('${list1[index]['D137']
+                                        .toDouble() /
+                                        100.00}\tmbar',
+                                      style: TextStyle(fontSize: 12),),
+                                  ) : Text('-', style: TextStyle(
+                                      fontSize: 15,
+                                      color: Colors.black),
+                                    maxLines: 1,),
+                                ],
+                              ),
+                              Text('Kanal 7 ve 8', style: TextStyle(fontSize: 15, color: Colors.black,fontWeight: FontWeight.bold),maxLines: 1,),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    list1[index]['D139'] == 0 || list1[index]['D139'] == 1
+                                        ? 'OK'
+                                        : list1[index]['D139'] == 2 ||
                                         list1[index]['D139'] == 3 ||
                                         list1[index]['D139'] == 4
-                                        ? Colors.red
-                                        :  list1[index]['D139'] == 5 ||
-                                        list1[index]['D139'] == 6
-                                        ? Colors.yellow
-                                        .shade700
-                                        :  list1[index]['D139'] == 10
-                                        ? Colors.blueAccent
-                                        : Colors
-                                        .blueAccent),maxLines: 1,),
-                                    Text('/',style: TextStyle(fontSize: 20, color: Colors.black),maxLines: 1,),
-                                    Text(
-                                      list1[index]['D139'] == 0 || list1[index]['D139'] == 2
-                                          ? 'OK'
-                                          : list1[index]['D139'] == 1 ||
-                                          list1[index]['D139'] == 3 ||
-                                          list1[index]['D139'] == 5
-                                          ? 'NOK'
-                                          : list1[index]['D139'] ==
-                                          4 || list1[index]['D139'] == 6
-                                          ? 'RE'
-                                          : list1[index]['D139'] == 10
-                                          ? '-'
-                                          : '?',
-                                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,
-                                          color: list1[index]['D139'] == 0 ||
-                                              list1[index]['D139'] == 2
-                                              ? Colors.green
-                                              : list1[index]['D139'] == 1 ||
-                                              list1[index]['D139'] == 3 ||
-                                              list1[index]['D139'] == 5
-                                              ? Colors.red
-                                              : list1[index]['D139'] == 4 ||
-                                              list1[index]['D139'] == 6
-                                              ? Colors.yellow
-                                              .shade700
-                                              : list1[index]['D139'] == 10
-                                              ? Colors.blueAccent
-                                              : Colors
-                                              .blueAccent),
-                                    ),
-                                    SizedBox(width: 10,),
-                                    list1[index]['D139'] != 10 ? FittedBox(
-                                      child:
-                                      Text('${list1[index]['D140']
-                                          .toDouble() /
-                                          100.00}\tmbar',
-                                        style: TextStyle(fontSize: 15),),
-                                    ) : Text('-', style: TextStyle(
-                                        fontSize: 20,
-                                        color: Colors.black),
-                                      maxLines: 1,),
-                                  ],
-                                ),
-                                Divider(thickness: 0.5,color: Colors.red,),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text('Sıcaklık:\t${list1[index]['t'].toDouble()/10.00}°C',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
-                                    SizedBox(width: 15,),
-                                    Text('Nem:\t${list1[index]['h'].toDouble()/10.00}%',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
-                                  ],
-                                ),
-                                Row(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: [
-                                    Text('Saat:\t${list1[index]['hour']}.${list1[index]['min']}',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
-                                    SizedBox(width: 15,),
-                                    Text('Tarih:\t${_day}.${_month}.${list1[index]['year']}',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
-                                  ],
-                                ),
+                                        ? 'NOK'
+                                        : list1[index]['D139'] ==
+                                        5 || list1[index]['D139'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D139'] == 10
+                                        ? '-'
+                                        : '?',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color:  list1[index]['D139'] == 0 ||
+                                      list1[index]['D139'] == 1
+                                      ? Colors.green
+                                      :  list1[index]['D139'] == 2 ||
+                                      list1[index]['D139'] == 3 ||
+                                      list1[index]['D139'] == 4
+                                      ? Colors.red
+                                      :  list1[index]['D139'] == 5 ||
+                                      list1[index]['D139'] == 6
+                                      ? Colors.yellow
+                                      .shade700
+                                      :  list1[index]['D139'] == 10
+                                      ? Colors.blueAccent
+                                      : Colors
+                                      .blueAccent),maxLines: 1,),
+                                  Text('/',style: TextStyle(fontSize: 15, color: Colors.black),maxLines: 1,),
+                                  Text(
+                                    list1[index]['D139'] == 0 || list1[index]['D139'] == 2
+                                        ? 'OK'
+                                        : list1[index]['D139'] == 1 ||
+                                        list1[index]['D139'] == 3 ||
+                                        list1[index]['D139'] == 5
+                                        ? 'NOK'
+                                        : list1[index]['D139'] ==
+                                        4 || list1[index]['D139'] == 6
+                                        ? 'RE'
+                                        : list1[index]['D139'] == 10
+                                        ? '-'
+                                        : '?',
+                                    style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,
+                                        color: list1[index]['D139'] == 0 ||
+                                            list1[index]['D139'] == 2
+                                            ? Colors.green
+                                            : list1[index]['D139'] == 1 ||
+                                            list1[index]['D139'] == 3 ||
+                                            list1[index]['D139'] == 5
+                                            ? Colors.red
+                                            : list1[index]['D139'] == 4 ||
+                                            list1[index]['D139'] == 6
+                                            ? Colors.yellow
+                                            .shade700
+                                            : list1[index]['D139'] == 10
+                                            ? Colors.blueAccent
+                                            : Colors
+                                            .blueAccent),
+                                  ),
+                                  SizedBox(width: 10,),
+                                  list1[index]['D139'] != 10 ? FittedBox(
+                                    child:
+                                    Text('${list1[index]['D140']
+                                        .toDouble() /
+                                        100.00}\tmbar',
+                                      style: TextStyle(fontSize: 12),),
+                                  ) : Text('-', style: TextStyle(
+                                      fontSize: 20,
+                                      color: Colors.black),
+                                    maxLines: 1,),
+                                ],
+                              ),
+                              Divider(thickness: 0.5,color: Colors.red,),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text('Sıcaklık:\t${list1[index]['t'].toDouble()/10.00}°C',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
+                                  SizedBox(width: 15,),
+                                  Text('Nem:\t${list1[index]['h'].toDouble()/10.00}%',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
+                                ],
+                              ),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.start,
+                                children: [
+                                  Text('Saat:\t${list1[index]['hour']}.${list1[index]['min']}',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
+                                  SizedBox(width: 15,),
+                                  Text('Tarih:\t${_day}.${_month}.${list1[index]['year']}',style: TextStyle(fontSize: 12,color: Colors.blue.shade700),maxLines: 1,),
+                                ],
+                              ),
 
 
-                                Row(
+                              FittedBox(
+                                child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    Image(image:AssetImage('images/img_kaslogo.png'),height: MediaQuery.of(context).size.height * 0.075,filterQuality: FilterQuality.medium,),
+                                    Image.asset('images/img_kaslogo.png',height: MediaQuery.of(context).size.height * 0.065,filterQuality: FilterQuality.medium,),
                                   ],
-                                )
+                                ),
+                              ),
 
-                              ],
-                            ),
+                            ],
                           ),
                           actions: [
                             ElevatedButton(
